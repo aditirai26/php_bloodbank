@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <title>Sign Up</title>
+   
+
+    <!-- <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          document.getElementById('name').addEventListener('invalid', function (event) {
+            event.preventDefault();
+          });
+        });
+      </script> -->
+      
+</head>
+
+<body>
+    <div>
+        <!-- Left section of signup form -->
+        <div>
+            <h1>SIGN UP FORM</h1>
+            <br>
+            <h5>Please fill this up!</h5>
+            <form class = "details" action = "signup-process.php"  method="post" style = "margin-top: 0px;">
+                <div class="formdesign" >
+                    <input type="text" name="fname" id="name" class="ab" placeholder="Enter your full name" autocomplete="off" required><b><span
+                        class="formerror"></span></b> 
+                </div>
+                <div class="formdesign">
+                    <input type="email" name="femail" id= "email" class="ab" placeholder="Enter your email Id" autocomplete="off" required><b><span
+                        class="formerror"></span></b> 
+                </div>
+                <div class="formdesign" >
+                    <input type="tel" name="fnumber" id="number" class="ab" placeholder="Enter your mobile number"  autocomplete="off" required><b><span
+                        class="formerror"></span></b>
+                </div>
+                <div class="dropdown">
+                    <b><span class="formerror"></span></b>
+                    <select name="purpose" id="purpose" class="dropdown-content" required>
+                        <option value="" hidden>Choose the most appropriate purpose</option>
+                        <option value="donor">Donor</option>
+                        <option value="beneficiary">Beneficiary</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <b><span class="formerror"></span></b>
+                    <select name="bloodgroup" id="bloodgroup" class="dropdown-content" required>
+                        <option value="" hidden>Enter your blood group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                
+                <div class="formdesign" >
+                    <label for="start" class="pq">
+                       Enter your date of birth 
+                    </label>
+                    <input type="date" name="dob" id="date" class="ab" placeholder="dd-mm-yyyy" max="2022-12-31" autocomplete="off" required><b><span
+                        class="formerror"></span></b>
+                </div>
+                <span color="white">
+                <div class="formdesign" >
+                    <input type="address" name="faddress" id="address" class="ab" placeholder="Enter your address" autocomplete="off" required><b><span
+                        class="formerror"></span></b>
+                </div>
+            </span>
+
+                <div class="formdesign" >
+                    <input type="text" name="city" id="location" class="ab" placeholder="Enter your current city" autocomplete="off" required><b><span
+                        class="formerror"></span></b>
+                </div>
+
+                <!-- <div class="formdesign" id="password">
+                    <input type="password" name="fpassword" class="ab" placeholder="Enter a password" required><b><span
+                        class="formerror"></span></b>
+                </div>
+                
+                <div class="formdesign" id="cpassword">
+                    <input type="password" name="fcpassword" class="ab" placeholder="Re-enter the password" required><b><span
+                        class="formerror"></span></b>
+                </div> -->
+                <button class="button" type="submit" name="submit">REGISTER NOW</button>
+            </form>
+            
+
+        </div>
+
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!-- <script>function validateForm(){
+        alert("validate call");
+      }</script> -->
+      <script src="signUp.js"></script>
+</body>
+
+</html>
